@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Felix Gym</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<img src="https://drive.google.com/uc?export=view&id=1asFdn9OQs5bTTyqweYsxfn5HhDNdKQz9"/><br/>
+	<h1>Felix Gym Club Member Registration</h1>
+	<form autocomplete="off" action="http://www.abc.com/prog.php" method="post">
+		<table style="margin:auto;width:100%">
+			<tr>
+				<th bgcolor="#00FF00">Personal Information</th>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						<fieldset>
+							<p>First Name: <input type="text" name="fname" id="fname" placeholder="Eg: Wai Shing" required></p>
+							<p>Last Name: <input type="text" name="lname" id="lname" placeholder="Eg: Tuen" required></p>
+							<p>Gender: 
+								<select name="gender" id="gender" required>
+									<option disabled selected hidden="hidden"></option>
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+								&ensp;Date of birth: <input type="date" name="date" id="date" required>
+							</p>
+							<p>Email: <input type="email" name="email" id="email" placeholder="Eg: youremail@example.com" size="30" required></p>
+							<p>Tel input: <input type="text" name="phone" id="phone" maxlength="8" pattern="[1-9]{1}[0-9]{7}" title="The tel number should be 8 digits and should not be 0 at begin" placeholder="Eg: 12345678" required></p>
+						</fieldset>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor="#33FFFF">Optional Survey</th>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						<fieldset>
+							How many years you have gyming? <input type="number" name="q1" id="q1" min="0" max="100"><br/><br/>						
+							Do you like gyming? 
+							<label for="q2yes">Yes</label>
+							<input type="radio" id="q2yes" name="q2" value="Yes">
+							<label for="q2no">No</label>
+							<input type="radio" id="q2no" name="q2" value="No"><br/><br/>
+							How often you hit the gym? &#40;0 = not often, 5 = often&#41;
+							0<input type="range" name="q3" id="q3" min="0" max="5">5<br/><br/>
+							Let down the gyming blog website if you have 
+							<input type="url" name="q4" id="q4" placeholder="http://www.example.com">
+						</fieldset>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor="#FF6600">Login Information</th>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						<fieldset>
+							Username: <input type="text" name="username" id="username" required> 
+							Password: <input type="password" name="password" id="password" required>
+						</fieldset>
+					</p>
+				</td>
+			</tr>
+		</table>
+		<button type="submit" name="submit" id="submit">Submit</button> <button type="reset" name="reset" id="reset">Reset</button>
+		<p>Copyright &copy; Felix Gym Club 2019</p>
+	</form>
+</body>
+</html>
